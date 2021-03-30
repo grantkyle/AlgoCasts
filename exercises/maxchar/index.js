@@ -13,7 +13,7 @@
 function maxChar(str) {
   const charMap = {};
   let max = 0;
-  let maxChar = '';
+  let maxChar = "";
 
   for (let char of str) {
     if (charMap[char]) {
@@ -24,15 +24,15 @@ function maxChar(str) {
   }
 
   for (let char in charMap) {
-      if (charMap[char] > max) {
-          max = charMap[char];
-          maxChar = char;
-      }
+    if (charMap[char] > max) {
+      max = charMap[char];
+      maxChar = char;
+    }
 
-      return maxChar;
+    return maxChar;
   }
 
-  console.log(charMap)
+  console.log(charMap);
 }
 
 module.exports = maxChar;
