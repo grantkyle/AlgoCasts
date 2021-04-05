@@ -6,6 +6,10 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+// console.log(typeof(reverse("asdf")))
+
+module.exports = reverse;
+
 // solution 1
 // function reverse(str) {
 //     return str.split('').reverse().join('')
@@ -18,19 +22,17 @@
 //   return array.join("");
 
 // solution 3
-function reverse(str) {
-  let reversed = "";
+// function reverse(str) {
+//   let reversed = "";
 
-  for (let character of str) {
-    reversed = character + reversed;
-  }
+//   for (let character of str) {
+//     reversed = character + reversed;
+//   }
 
-  return reversed;
-}
+//   return reversed;
+// }
 
 // solution 4
 // function reverse(str) {
 //   return str.split("").reduce((rev, char) => char + rev, "");
 // }
-
-module.exports = reverse;
