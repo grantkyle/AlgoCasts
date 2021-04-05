@@ -12,10 +12,10 @@
 
 function maxChar(str) {
   const charMap = {};
-  max = 0;
-  maxChar = "";
+  let max = 0;
+  let maxChar = "";
 
-  for (char of str) {
+  for (let char of str) {
     if (charMap[char]) {
       charMap[char]++;
     } else {
@@ -23,39 +23,14 @@ function maxChar(str) {
     }
   }
 
-  for (char in charMap) {
+  for (let char in charMap) {
     if (charMap[char] > max) {
-      max = charMap[char] 
-      maxChar = char
+      max = charMap[char];
+      maxChar = char;
     }
-
-    return maxChar
   }
+
+  return maxChar;
 }
 
 module.exports = maxChar;
-
-// function maxChar(str) {
-//   const charMap = {};
-//   let max = 0;
-//   let maxChar = "";
-
-//   for (let char of str) {
-//     if (charMap[char]) {
-//       charMap[char]++;
-//     } else {
-//       charMap[char] = 1;
-//     }
-//   }
-
-//   for (let char in charMap) {
-//     if (charMap[char] > max) {
-//       max = charMap[char];
-//       maxChar = char;
-//     }
-
-//     return maxChar;
-//   }
-
-//   console.log(charMap);
-// }
