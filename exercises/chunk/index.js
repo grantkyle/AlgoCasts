@@ -10,15 +10,13 @@
 
 // solution 2
 function chunk(array, size) {
-  const chunked = [];
-  let index = 0;
+  const chunked = []; 
 
-  while (index < array.length) {
-    array.slice(index, index + size);
-    index += size;
+  for(let element of array) {
+    const last = chunked[chunked.length]
+
+    if 
   }
-
-  return chunked
 }
 
 module.exports = chunk;
@@ -35,6 +33,19 @@ module.exports = chunk;
 //     } else {
 //       last.push(element);
 //     }
+//   }
+
+//   return chunked;
+// }
+
+// solution 2
+// function chunk(array, size) {
+//   const chunked = [];
+//   let index = 0;
+
+//   while (index < array.length) {
+//     chunked.push(array.slice(index, index + size));
+//     index += size;
 //   }
 
 //   return chunked;
